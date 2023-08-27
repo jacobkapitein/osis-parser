@@ -1,0 +1,32 @@
+{
+  "name": "@jacobkapitein/osis-parser",
+  "version": "1.0.0",
+  "description": "Basic parser for OSIS documents",
+  "license": "MIT",
+  "author": "Jacob Kapitein",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bsm build",
+    "build:dev": "bsm build.dev",
+    "build:prod": "bsm build.prod",
+    "build:watch": "bsm build.watch",
+    "prettier": "bsm prettier"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@under_koen/bsm": "^0.0.5",
+    "esbuild": "^0.19.2",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.2",
+    "prettier-package-json": "^2.8.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.2.7"
+  }
+}
