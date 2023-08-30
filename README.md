@@ -8,3 +8,7 @@ Making the project as SOLID as possible will make it easier to add new features 
 
 The OSIS specification is **old** (latest version 2.1.1 from 2006), but still reliable. It's a very good format for storing Bible data, and it's used by many Bible software applications.
 The specification document used for this project can be found [here](http://crosswire.org/osis/OSIS%202.1.1%20User%20Manual%2006March2006.pdf).
+
+## Current status:
+
+I implemented most of the classes from chapter 13 in the OSIS spec, but I noticed I made a crucial error in my work.

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-redundant-type-constituents */
 import { Index } from ".";
 import { BaseElement } from "../baseElement";
 import { A } from "./a";
@@ -29,9 +30,27 @@ type AllowedSubElements =
   | Seg
   | W;
 type AllowedAttributes = "type";
+type CustomAllowedAttributes = {
+  type:
+    | "acrostic"
+    | "bold"
+    | "emphasis"
+    | "illuminated"
+    | "italic"
+    | "line-through"
+    | "normal"
+    | "small-caps"
+    | "sub"
+    | "super"
+    | "underline"
+    | string;
+};
 
 export class Hi implements BaseElement {
-  public attributes: Record<AllowedAttributes, string> = { type: "" };
+  public attributes: Record<
+    AllowedAttributes,
+    CustomAllowedAttributes[keyof CustomAllowedAttributes]
+  > = { type: "test" };
   public subElements: AllowedSubElements[] = [];
   public text = "";
 }
